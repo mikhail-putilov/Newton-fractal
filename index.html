@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Newton fractal by M.Putilov</title>
+    <script src="jquery-2.1.1.js"></script>
+    <script src="main.js"></script>
+    <style>
+        #mainCanvas {
+          border: 1px dotted black;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Newton fractal</h1>
+    </header>
+    <section>
+      <p>
+      <label for="totalIterations">Max iterations:</label>
+      <select id="totalIterations">
+        <option>100</option>
+        <option>50</option>
+        <option>10</option>
+      </select>
+      <select id="colorScheme">
+        <option>Default</option>
+        <option>Hybrid</option>
+        <option>Zebra</option>
+        <option>White</option>
+      </select>
+      ; Next scale value: <span id="scale">2</span>
+      <button id="reset">reset</button>
+      </p>
+      <br>
+      <canvas id="mainCanvas" height="500" width="500"></canvas>
+    </section>
+  </body>
+</html>
